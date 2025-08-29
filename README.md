@@ -19,6 +19,12 @@ ByteBlitz is a full-stack web application designed to help users practice and im
 
 - **Admin Dashboard:** Manage problems, users, and playlists.
 
+
+## Preview
+
+![App Screenshot](./client/public/byteblitzpic.png)
+
+
 ## Technologies
 
 ### Client (Frontend)
