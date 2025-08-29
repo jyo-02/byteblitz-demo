@@ -91,29 +91,7 @@ export default function LandingPage() {
           </div>
 
           {/* Code Block */}
-          <Card className="h-80 mt-20 w-full max-w-3xl shadow-2xl border border-white/10 bg-[#1e1e1e] text-sm font-mono text-left rounded-xl overflow-hidden p-0">
-            <div className="flex items-center space-x-2 px-4 py-2 bg-[#2e2e2e] border-b border-white/10">
-              <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-              <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-              <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-            </div>
-            <CardContent className="p-0">
-              <SyntaxHighlighter
-                language="javascript"
-                style={vscDarkPlus}
-                wrapLines
-                showLineNumbers
-                customStyle={{
-                  margin: 0,
-                  padding: "1rem",
-                  background: "#1e1e1e",
-                  fontSize: "0.15rem",
-                }}
-              >
-                {code}
-              </SyntaxHighlighter>
-            </CardContent>
-          </Card>
+         //demo code not available entirely
         </section>
 
         {/* About Section */}

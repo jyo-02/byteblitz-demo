@@ -55,38 +55,7 @@ export const getTodayUsageStats = asyncHandler(async (req, res) => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const usage = await Submission.aggregate([
-    {
-      $match: {
-        createdAt: { $gte: today }
-      }
-    },
-    {
-      $group: {
-        _id: "$userId",
-        submissionsToday: { $sum: 1 }
-      }
-    },
-    {
-      $lookup: {
-        from: "users",
-        localField: "_id",
-        foreignField: "_id",
-        as: "user"
-      }
-    },
-    {
-      $unwind: "$user"
-    },
-    {
-      $project: {
-        _id: 0,
-        username: "$user.username",
-        email: "$user.email",
-        submissionsToday: 1
-      }
-    }
-  ]);
+  //demo code not available entirely
 
   res.status(200).json(usage);
 });
